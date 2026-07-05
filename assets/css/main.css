@@ -8,8 +8,7 @@ body {
 header {
   margin-bottom: 1rem;
   background: rgba(255, 255, 255, 0.95) !important;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   box-shadow: none !important;
 }
@@ -29,7 +28,7 @@ header .nav-link {
   font-size: 0.9rem;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #7f3bd1 !important;
+  color: rgb(127.202247191, 59.2247191011, 208.7752808989) !important;
   padding: 0.5rem 1rem !important;
   position: relative;
   transition: all 0.3s ease;
@@ -60,7 +59,7 @@ header .nav-link.active::after {
 }
 
 .intro {
-  background: linear-gradient(135deg, #602ea9, #321859);
+  background: linear-gradient(135deg, #602ea9, rgb(50.4558139535, 24.176744186, 88.823255814));
   color: white;
   border-radius: 15px;
   padding: 3rem;
@@ -75,18 +74,26 @@ header .nav-link.active::after {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
   border: 3px solid rgba(255, 255, 255, 0.1);
 }
-.intro .ps-md-5 {
-  padding-left: 3rem !important;
-}
 .intro .row {
   gap: 2rem;
 }
 .intro .col-md-7 {
   max-width: 500px;
 }
+@media (max-width: 767px) {
+  .intro {
+    text-align: center;
+  }
+  .intro .ps-md-5 {
+    padding-left: 0 !important;
+  }
+  .intro .rounded-custom {
+    height: 250px;
+  }
+}
 
 footer {
-  border-top: 1px solid #5144a2;
+  border-top: 1px solid rgb(80.859375, 68.28125, 161.71875);
 }
 footer .social-links a {
   display: inline-block;
@@ -149,7 +156,7 @@ footer p {
 .nav-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-  background-color: #ebe0f8;
+  background-color: rgb(234.9325842697, 224.2584269663, 247.7415730337);
   border-bottom-color: #ad6be4;
 }
 
@@ -174,7 +181,7 @@ footer p {
 }
 .btn-primary:hover {
   transform: translateY(-2px);
-  background-color: #492381;
+  background-color: rgb(73.2279069767, 35.088372093, 128.911627907);
 }
 
 /* Stili per il layout del CV */

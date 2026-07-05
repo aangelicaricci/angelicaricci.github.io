@@ -70,34 +70,39 @@ header {
     background: linear-gradient(135deg, $primary-color, darken($primary-color, 20%));
     color: white;
     border-radius: 15px;
-    padding: 3rem; // Aggiunge spazio interno (padding) alla sezione viola
+    padding: 3rem; 
     margin-bottom: 3rem;
     
     .rounded-custom {
-        width: 100%;          // Occupa tutta la larghezza della colonna
-        height: 300px;        // Imposta un'altezza fissa (es. 300px) per creare il rettangolo orizzontale
-        object-fit: cover;    // Fondamentale: ritaglia l'immagine per riempire il rettangolo
-        //object-position: center 20%; // Regola la posizione (es. 20% dall'alto) per centrare il volto
+        width: 100%;          
+        height: 300px;        
+        object-fit: cover;    
         border-radius: 20px;
         box-shadow: 0 10px 25px rgba(0,0,0,0.2);
         border: 3px solid rgba(255, 255, 255, 0.1);
     }
 
-    // Aggiusta il padding sul testo per distanziarlo dall'immagine su desktop
-    .ps-md-5 {
-        padding-left: 3rem !important;
-    }
-
     .row {
-        gap: 2rem; // Aggiunge spazio fisico tra foto e testo
+        gap: 2rem; 
     }
     
-    // Riduciamo la larghezza del testo per renderlo più leggibile
     .col-md-7 {
-        max-width: 500px; // Limita la larghezza del paragrafo per una lettura ottimale
+        max-width: 500px; 
+    }
+
+    // Correzione: Media query esterna alla classe .intro o correttamente nidificata
+    @media (max-width: 767px) {
+        text-align: center; // Centra tutto il testo dentro .intro su mobile
+
+        .ps-md-5 {
+            padding-left: 0 !important;
+        }
+
+        .rounded-custom {
+            height: 250px; // Magari un po' più bassa su mobile
+        }
     }
 }
-
 
 // Footer
 footer {
