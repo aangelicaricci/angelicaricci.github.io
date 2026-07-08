@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: "Inter", sans-serif;
   background-color: #fdfcff;
@@ -178,6 +179,7 @@ footer p {
   background-color: rgb(73.2279069767, 35.088372093, 128.911627907);
 }
 
+/* Stili per il layout del CV */
 .game-section {
   padding: 20px 0;
 }
@@ -194,6 +196,7 @@ footer p {
   padding: 0 20px;
 }
 
+/* Header del CV */
 .cv-header {
   display: flex;
   justify-content: space-between;
@@ -208,15 +211,16 @@ footer p {
   margin: 0;
 }
 
+/* Griglia per le sezioni */
 .cv-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
+  grid-template-columns: 1fr 1fr; /* Due colonne uguali */
+  gap: 60px; /* Spazio tra sinistra e destra */
 }
 
 @media (max-width: 768px) {
   .cv-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* Una sola colonna su mobile */
   }
   .cv-header {
     flex-direction: column;
@@ -224,6 +228,7 @@ footer p {
     gap: 20px;
   }
 }
+/* Stile dei singoli blocchi (Items) */
 .cv-section-title {
   font-size: 1.2rem;
   margin-bottom: 25px;
@@ -252,18 +257,19 @@ footer p {
 }
 
 .cv-period {
-  white-space: nowrap;
-  margin-left: 15px;
-  flex-shrink: 0;
-  font-size: 0.9rem;
+  white-space: nowrap; /* Impedisce al testo di andare a capo */
+  margin-left: 15px; /* Aggiunge un po' di spazio tra il titolo e la data */
+  flex-shrink: 0; /* Impedisce alla data di rimpicciolirsi se il titolo è lungo */
+  font-size: 0.9rem; /* Opzionale: leggermente più piccolo per equilibrio visivo */
 }
 
 .cv-item-header {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: flex-start; /* Allinea il testo in alto se il titolo occupa più righe */
 }
 
+/* Stile Bottone Download */
 .download-btn {
   display: inline-flex;
   align-items: center;
