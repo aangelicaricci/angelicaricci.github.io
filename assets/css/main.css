@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body {
   font-family: "Inter", sans-serif;
   background-color: #fdfcff;
@@ -7,16 +6,16 @@ body {
 
 header {
   margin-bottom: 1rem;
-  background: rgba(255, 255, 255, 0.95) !important;
+  background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-  box-shadow: none !important;
+  box-shadow: none;
 }
 header .navbar-brand {
   font-weight: 700;
   font-size: 1.2rem;
   letter-spacing: -0.5px;
-  color: #602ea9 !important;
+  color: #602ea9;
 }
 @media (min-width: 992px) {
   header .navbar-brand {
@@ -28,17 +27,17 @@ header .nav-link {
   font-size: 0.9rem;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: rgb(127.202247191, 59.2247191011, 208.7752808989) !important;
-  padding: 0.5rem 1rem !important;
+  color: rgb(127.202247191, 59.2247191011, 208.7752808989);
+  padding: 0.5rem 1rem;
   position: relative;
   transition: all 0.3s ease;
 }
 header .nav-link:hover {
-  color: #602ea9 !important;
+  color: #602ea9;
   transform: translateY(-2px);
 }
 header .nav-link.active {
-  color: #602ea9 !important;
+  color: #602ea9;
   font-weight: 700;
 }
 header .nav-link.active::after {
@@ -54,8 +53,8 @@ header .nav-link.active::after {
 }
 
 .navbar {
-  padding-left: 2rem !important;
-  padding-right: 2rem !important;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .intro {
@@ -92,13 +91,13 @@ footer {
 }
 footer .social-links a {
   display: inline-block;
-  text-decoration: none !important;
+  text-decoration: none;
   transition: color 0.3s ease;
-  border: none !important;
-  outline: none !important;
+  border: none;
+  outline: none;
 }
 footer .social-links a:hover {
-  color: #ad6be4 !important;
+  color: #ad6be4;
 }
 footer p {
   font-size: 0.85rem;
@@ -179,7 +178,6 @@ footer p {
   background-color: rgb(73.2279069767, 35.088372093, 128.911627907);
 }
 
-/* Stili per il layout del CV */
 .game-section {
   padding: 20px 0;
 }
@@ -196,7 +194,6 @@ footer p {
   padding: 0 20px;
 }
 
-/* Header del CV */
 .cv-header {
   display: flex;
   justify-content: space-between;
@@ -211,16 +208,15 @@ footer p {
   margin: 0;
 }
 
-/* Griglia per le sezioni */
 .cv-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Due colonne uguali */
-  gap: 60px; /* Spazio tra sinistra e destra */
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
 }
 
 @media (max-width: 768px) {
   .cv-grid {
-    grid-template-columns: 1fr; /* Una sola colonna su mobile */
+    grid-template-columns: 1fr;
   }
   .cv-header {
     flex-direction: column;
@@ -228,7 +224,6 @@ footer p {
     gap: 20px;
   }
 }
-/* Stile dei singoli blocchi (Items) */
 .cv-section-title {
   font-size: 1.2rem;
   margin-bottom: 25px;
@@ -257,25 +252,24 @@ footer p {
 }
 
 .cv-period {
-  white-space: nowrap; /* Impedisce al testo di andare a capo */
-  margin-left: 15px; /* Aggiunge un po' di spazio tra il titolo e la data */
-  flex-shrink: 0; /* Impedisce alla data di rimpicciolirsi se il titolo è lungo */
-  font-size: 0.9rem; /* Opzionale: leggermente più piccolo per equilibrio visivo */
+  white-space: nowrap;
+  margin-left: 15px;
+  flex-shrink: 0;
+  font-size: 0.9rem;
 }
 
 .cv-item-header {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start; /* Allinea il testo in alto se il titolo occupa più righe */
+  align-items: flex-start;
 }
 
-/* Stile Bottone Download */
 .download-btn {
   display: inline-flex;
   align-items: center;
   gap: 10px;
   padding: 10px 20px;
-  background-color: #602ea9 !important;
+  background-color: #602ea9;
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -283,7 +277,7 @@ footer p {
 }
 
 .download-btn:hover {
-  background-color: #602ea9 !important;
+  background-color: #602ea9;
   color: white;
 }
 
@@ -321,7 +315,7 @@ footer p {
 
 .project-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .project-card img {

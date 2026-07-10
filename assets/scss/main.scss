@@ -9,16 +9,16 @@ body {
 // Styling dell'Header Sticky
 header {
     margin-bottom: 1rem;
-    background: rgba(255, 255, 255, 0.95) !important;
+    background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px); 
     border-bottom: 1px solid rgba(0,0,0,0.05); 
-    box-shadow: none !important;
+    box-shadow: none;
 
     .navbar-brand {
         font-weight: 700;
         font-size: 1.2rem;
         letter-spacing: -0.5px; 
-        color: $primary-color !important;
+        color: $primary-color;
         @media (min-width: 992px) {
             padding-left: 0; 
         }
@@ -29,20 +29,20 @@ header {
         font-size: 0.9rem;
         text-transform: uppercase;
         letter-spacing: 1px;
-        color: darken($secondary-bg, 30%) !important;
-        padding: 0.5rem 1rem !important; 
+        color: darken($secondary-bg, 30%);
+        padding: 0.5rem 1rem; 
         position: relative; 
         transition: all 0.3s ease; 
 
         // Effetto Hover
         &:hover {
-            color: $primary-color !important;
+            color: $primary-color ;
             transform: translateY(-2px); 
         }
 
         // Effetto Pagina Attiva
         &.active {
-            color: $primary-color !important;
+            color: $primary-color ;
             font-weight: 700;
             
             &::after {
@@ -61,8 +61,8 @@ header {
 }
 
 .navbar {
-    padding-left: 2rem !important; 
-    padding-right: 2rem !important;
+    padding-left: 2rem ; 
+    padding-right: 2rem ;
 }
 
 // Intro Section
@@ -102,13 +102,13 @@ footer {
     .social-links {
         a {
             display: inline-block; 
-            text-decoration: none !important; 
+            text-decoration: none ; 
             transition: color 0.3s ease;
-            border: none !important; 
-            outline: none !important;
+            border: none ; 
+            outline: none ;
             
             &:hover {
-                color: $accent-color !important;
+                color: $accent-color ;
             }
         }
     }
@@ -298,7 +298,7 @@ footer {
     align-items: center;
     gap: 10px;
     padding: 10px 20px;
-    background-color: $primary-color !important;
+    background-color: $primary-color ;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -306,7 +306,7 @@ footer {
 }
 
 .download-btn:hover {
-    background-color: $primary-color !important;
+    background-color: $primary-color ;
     color: white;
 }
 
@@ -346,7 +346,7 @@ footer {
 
 .project-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) ;
 }
 
 .project-card img {
