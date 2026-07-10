@@ -54,7 +54,7 @@ Questo progetto è un sito personale pensato per presentare il mio profilo profe
 ## 📁 Struttura del repository
 
 ```
-start2impact-HTML-e-CSS-Projects/
+angelicaricci.github.io/
 ├── index.html
 ├── portfolio.html
 ├── cv.html
